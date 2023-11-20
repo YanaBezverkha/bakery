@@ -1,0 +1,195 @@
+
+/**
+  |===================================================================
+  |                     Fonts
+  |===================================================================
+*/
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+  }
+
+/**
+  |===================================================================
+  |                      Common
+  |===================================================================
+*/
+:root {
+    --primary-light: #FAF4EA;
+    --primary-dark: #31261A;
+    --primary-green: #819B57;
+    --secondary-green: #465929;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    color: currentColor;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+body {
+    color: var(--primary-dark, black);
+font-family: 'Poppins';
+font-size: 18px;
+font-weight: 400;
+line-height: 1.5;
+}
+
+.section-title {
+    font-size: 64px;
+font-weight: 900;
+line-height: 1.3; 
+}
+
+/**
+  |===================================================================
+  |                    Header
+  |===================================================================
+*/
+.nav {
+}
+.nav-list {
+    color: var(--primary-light);
+}
+.nav-item {
+}
+.button-call {
+    font-weight: 600;
+    color: var(--primary-light);
+    background-color: var(--primary-green);
+}
+/**
+  |===================================================================
+  |                    Hero
+  |===================================================================
+*/
+.hero-title {
+    color: var(--primary-light);
+text-align: center;
+font-size: 128px;
+font-weight: 900;
+}
+.accent-color {
+    color: var(--primary-green);
+}
+.hero-list {
+    color: var(--primary-light);
+    font-size: 20px;
+font-weight: 300;
+}
+
+.hero-item {
+}
+
+/**
+  |===================================================================
+  |                    Advantages
+  |===================================================================
+*/
+.advantages-definition.accent-color {
+    text-transform: uppercase;
+}
+.advantages-text {
+}
+/**
+  |===================================================================
+  |                      Chefs
+  |===================================================================
+*/
+.chefs-list {
+}
+.chefs-item {
+}
+.chefs-name {
+    font-size: 40px;
+font-weight: 600;
+}
+.chefs-text-list {
+}
+.chefs-text-item {
+}
+/**
+  |===================================================================
+  |                    Types
+  |===================================================================
+*/
+.types-list {
+}
+.types-item {
+    color: var(--primary-light);
+}
+.types-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+.types-text-list {
+    font-size: 14px;
+font-weight: 300;
+}
+.types-text-item {
+}
+/**
+  |===================================================================
+  |                   Footer
+  |===================================================================
+*/
+.address {
+    color: var(--primary-light);
+    font-size: 16px;
+font-weight: 300;
+}
+.address-list {
+    font-style: normal;
+}
+.address-item {
+}
+.address-socials-list {
+}
+.address-socials-item {
+}
+.privacy-policy {
+}
+.data-ptotected {
+    color: #A18268;
+    font-size: 14px;
+font-weight: 400;
+}
