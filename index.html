@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-
-
-  
   <body>
     <!-- Header -->
-    <header class="section-head">
+    <header class="section-header">
       <div class="container container-header">
-        <nav class="nav">
-          <a class="logo" href="/"><img src="./images/logo.svg" /></a>
+        <nav class="nav-header">
+          <a class="logo" href="/">
+            <svg class="" width="114" height="56">
+              <use href="./images/sptrite-icon.svg#icon-logo"></use>
+            </svg>
+          </a>
           <ul class="nav-list">
             <li class="nav-item"><a href="#advantages">Наші традиції</a></li>
             <li class="nav-item"><a href="#chefs">Шеф-кухарі</a></li>
@@ -80,7 +81,8 @@
       <section class="section" id="chefs">
         <div class="container">
           <h2 class="section-title section-title-chefs">
-            Наші найкращі <span class="accent-color">шеф - кухарі</span>
+            Наші найкращі <br />
+            <span class="accent-color-title">шеф - кухарі</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -131,8 +133,8 @@
         <div class="container">
           <h2 class="section-title section-title-types">Формати</h2>
           <div class="types-wrap">
-            <button class="icon-arrow" type="button">
-              <svg width="17" height="14">
+            <button class="btn-arrow" type="button">
+              <svg class="icon-arrow" width="17" height="14">
                 <use href="./images/sptrite-icon.svg#icon-arrow-left"></use>
               </svg>
             </button>
@@ -182,8 +184,8 @@
                 </ul>
               </li>
             </ul>
-            <button class="icon-arrow" type="button">
-              <svg class="" width="17">
+            <button class="btn-arrow" type="button">
+              <svg class="" width="17" height="14">
                 <use href="./images/sptrite-icon.svg#icon-arrow-right"></use>
               </svg>
             </button>
@@ -193,9 +195,64 @@
 
       <!-- Form section -->
       <section class="section" id="contacts">
-        <div class="container">
-          <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+        <div class="container form-container">
+          <div class="form-wrap">
+            <h2 class="section-title form-title">
+              Приєднуйся до мережі пекарень
+            </h2>
+            <p class="form-text">Заповни форму, щоб ми звʼязались з тобою!</p>
+            <form name="contact-form" autocomplete="on">
+              <label class="visually-hidden" for="user-name">Ім’я</label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Ім’я"
+                required
+              />
+
+              <label class="visually-hidden" for="user-tel">Телефон</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Телефон"
+                required
+                pattern="^\+[0-9]{12}"
+              />
+
+              <label class="visually-hidden" for="user-email"
+                >Електронна пошта</label
+              >
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Електронна пошта"
+                required
+              />
+
+              <button class="button-call btn-form" type="submit">
+                Замовити дзвінок
+              </button>
+
+              <p class="form-text-policy">
+                Натискаючи на кнопку я погоджуюсь з
+                <a
+                  class="form-policy-link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >політикою конфіденційності</a
+                >
+              </p>
+            </form>
+          </div>
           <iframe
+            class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sie!4v1700491890540!5m2!1sru!2sie"
             width="600"
             height="600"
@@ -211,9 +268,13 @@
     <footer class="section-footer">
       <div class="container cont-footer">
         <nav class="nav-footer">
-          <a class="logo-footer" href="/"
-            ><img src="./images/logo.svg" alt="" width="114px" height="56px"
-          /></a>
+          <div class="logo-wrap">
+            <a class="logo" href="/">
+              <svg width="114" height="56">
+                <use href="./images/sptrite-icon.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
           <ul class="nav-list-footer">
             <li class="nav-item-footer">
               <a href="#advantages">Наші традиції</a>
@@ -223,40 +284,55 @@
             <li class="nav-item-footer"><a href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <div class="foot-wrap">
+        <div class="address-wrap">
           <address class="address">
             <ul class="address-list">
               <li class="address-item">
-                <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                <a class="address-item-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
               </li>
               <li class="address-item">
-                <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                <a class="address-item-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
               </li>
               <li class="address-item">
                 <a
+                  class="address-item-link"
                   href="http://maps.app.goo.gl/d58zEVkt9He5GfzW6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Україна, м. Київ, <br> вул. Січових Стрільців 54</a
+                  >Україна, м. Київ, <br />
+                  вул. Січових Стрільців 54</a
                 >
               </li>
-            </ul>
-            <ul class="address-socials-list">
-              <li class="address-socials-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon-socials" width="32" height="32">
-                    <use href="./images/sptrite-icon.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="address-socials-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon-socials" width="32" height="32">
-                      <use href="./images/sptrite-icon.svg#icon-instagram"></use>
+              <li class="address-item">
+                <div class="address-socials">
+                  <a
+                    class="address-socials-link"
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon-socials">
+                      <use href="./images/sptrite-icon.svg#icon-facebook"></use>
                     </svg>
                   </a>
-                </a>
+
+                  <a
+                    class="address-socials-link"
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon-socials">
+                      <use
+                        href="./images/sptrite-icon.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
               </li>
             </ul>
           </address>
@@ -268,7 +344,7 @@
               rel="noopener noreferrer"
               >Політика конфіденційності</a
             >
-            <p class="data-ptotected">&copy; 2022 Дані захищені</p>
+            <p class="data-protected">&copy; 2022 Дані захищені</p>
           </div>
         </div>
       </div>
