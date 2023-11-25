@@ -1,0 +1,21 @@
+    .input {
+    display: block;
+    width: 100%;
+    padding: 16px 42px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--accent-beige);
+
+    &::placeholder {
+        color: var(--accent-beige);
+      }
+      
+    &:focus::placeholder {
+        color: var(--primary-green);
+      }
+      
+    &:focus {
+        outline: none;
+        border-color: var(--primary-green);
+      } 
+  }

@@ -1,0 +1,31 @@
+.link {
+    text-decoration: none;
+    color: var(--primary-light);
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+        color: var(--primary-green);
+        transform: scale(1.1, 1.1);
+      }
+  }
+  
+.policy-link {
+        color: var(--primary-dark);
+        text-underline-offset: 3px;
+       
+    &:hover {
+        color: var(--primary-green);
+    }
+  }
+ 
+.address-link {
+  text-decoration: none;
+        color: var(--primary-light);
+        font-size: 16px;
+        font-weight: 300;
+        transition: color 0.3s, transform 0.3s;
+    &:hover {
+        color: var(--primary-green);
+        transform: scale(1.1, 1.1);
+    }
+  }

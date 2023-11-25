@@ -4,73 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
     <!-- Header -->
-    <header class="section-header">
-      <div class="container container-header">
-        <nav class="nav-header">
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
           <a class="logo" href="/">
             <svg class="" width="114" height="56">
               <use href="./images/sptrite-icon.svg#icon-logo"></use>
             </svg>
           </a>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#advantages">Наші традиції</a></li>
-            <li class="nav-item"><a href="#chefs">Шеф-кухарі</a></li>
-            <li class="nav-item"><a href="#types">Формати</a></li>
-            <li class="nav-item"><a href="#contacts">Контакти</a></li>
+          <ul class="header__list">
+            <li><a class="link" href="#advantages">Наші традиції</a></li>
+            <li><a class="link" href="#chefs">Шеф-кухарі</a></li>
+            <li><a class="link" href="#types">Формати</a></li>
+            <li><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button-call" type="button">Замовити дзвінок</button>
+        <button class="button-call header__btn--animation" type="button">Замовити дзвінок</button>
       </div>
     </header>
 
     <main>
       <!-- Hero section -->
-      <section class="section-hero">
+      <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent-color">Сучасна</span> пекарня
+          <h1 class="hero-section__title">
+            <span class="text-accent">Сучасна</span> пекарня
           </h1>
         </div>
       </section>
 
       <!-- line section -->
-      <section class="section-line">
+      <section class="line-section">
         <div class="container">
-          <ul class="line-list">
-            <li class="line-item">Великий попит на ринку</li>
-            <li class="line-item">Доступні за бюджетом формати</li>
-            <li class="line-item">Досвідчена управлінська команда</li>
+          <ul class="line-section__list">
+            <li class="line-section__item">Великий попит на ринку</li>
+            <li class="line-section__item">Доступні за бюджетом формати</li>
+            <li class="line-section__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
 
       <!-- Advantages section -->
-      <section class="section section-adv" id="advantages">
-        <div class="container container-adv">
-          <div class="adv-wrap">
-            <h2 class="section-title section-title-adv">
+      <section class="section advantages-section" id="advantages">
+        <div class="container container--flex">
+          <div class="advantages-section__wrap">
+            <h2 class="section__title advantages-section__title">
               Новий формат традицій
             </h2>
-            <p class="advantages-definition">
-              <span class="accent-color">shop bakery</span> — це пекарня, яка
+            <p class="advantages-section__definition">
+              <span class="text-accent text-uppercase">shop bakery</span> — це пекарня, яка
               взяла все найкраще, і зберегла смак традиційної випічки та
               натуральність інгредієнтів.
             </p>
-            <p class="advantages-text">
+            <p class="advantages-section__text">
               Ми працюємо як найвідоміші мережі —
-              <span class="accent-color">5 хвилин і замовлення готове.</span>
+              <span class="text-accent">5 хвилин і замовлення готове.</span>
               <br />
               А ще у наших пекарень стильний дизайн та висока якість
               обслуговування!
             </p>
           </div>
           <img
-            class="advantages-img"
+            class="advantages-section__img"
             src="./images/man-with-bread.jpg"
             alt=""
           />
@@ -78,25 +78,25 @@
       </section>
 
       <!-- Chefs section -->
-      <section class="section" id="chefs">
+      <section class="section chefs-section" id="chefs">
         <div class="container">
-          <h2 class="section-title section-title-chefs">
+          <h2 class="section__title chefs-section__title">
             Наші найкращі <br />
-            <span class="accent-color-title">шеф - кухарі</span>
+            <span class="text-accent-dark">шеф - кухарі</span>
           </h2>
-          <ul class="chefs-list">
-            <li class="chefs-item">
-              <img class="chef-img" src="./images/chef-nastya.jpg" alt="" />
-              <div class="chef-wrap">
-                <h3 class="chefs-name">Настя</h3>
-                <ul class="chefs-text-list">
-                  <li class="chefs-text-item"><p>Привіт, я Настя!</p></li>
-                  <li class="chefs-text-item">
+          <ul class="chefs-section__list">
+            <li class="chef-card">
+              <img class="chef-card__img" src="./images/chef-nastya.jpg" alt="" />
+              <div>
+                <h3 class="chef-card__name">Настя</h3>
+                <ul>
+                  <li class="chef-card__text"><p>Привіт, я Настя!</p></li>
+                  <li class="chef-card__text">
                     <p>
                       Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.
                     </p>
                   </li>
-                  <li class="chefs-text-item">
+                  <li class="chef-card__text">
                     <p>
                       Я випічу для вас <br />
                       найсмачніщі вироби!
@@ -105,20 +105,20 @@
                 </ul>
               </div>
             </li>
-            <li class="chefs-item">
-              <img class="chef-img" src="./images/chef-vlad.jpg" alt="" />
-              <div class="chef-wrap">
-                <h3 class="chefs-name">Влад</h3>
-                <ul class="chefs-text-list">
-                  <li class="chefs-text-item"><p>Привіт, я Влад!</p></li>
-                  <li class="chefs-text-item">
+            <li class="chef-card">
+              <img class="chef-card__img" src="./images/chef-vlad.jpg" alt="" />
+              <div>
+                <h3 class="chef-card__name">Влад</h3>
+                <ul>
+                  <li class="chef-card__text"><p>Привіт, я Влад!</p></li>
+                  <li class="chef-card__text">
                     <p>
                       Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
                       любов, з якою ми ділимось кожен раз з Вами через нашу
                       випічку!
                     </p>
                   </li>
-                  <li class="chefs-text-item">
+                  <li class="chef-card__text">
                     <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
                   </li>
                 </ul>
@@ -128,64 +128,64 @@
         </div>
       </section>
 
-      <!-- types section -->
-      <section class="section" id="types">
+      <!-- Types section -->
+      <section class="section types-section" id="types">
         <div class="container">
-          <h2 class="section-title section-title-types">Формати</h2>
-          <div class="types-wrap">
+          <h2 class="section__title types-section__title">Формати</h2>
+          <div class="types-section__wrap">
             <button class="btn-arrow" type="button">
-              <svg class="icon-arrow" width="17" height="14">
+              <svg width="17" height="14">
                 <use href="./images/sptrite-icon.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <ul class="types-list">
-              <li class="types-item types-item-walrus">
-                <h3 class="types-name">Walrus</h3>
-                <ul class="types-text-list">
-                  <li class="types-text-item"><p>Площа: до 120 м2</p></li>
-                  <li class="types-text-item"><p>Меню: розширене меню</p></li>
-                  <li class="types-text-item">
+            <ul class="types-section__list">
+              <li class="types-card types-card__walrus">
+                <h3 class="types-card__name">Walrus</h3>
+                <ul class="types-card__list">
+                  <li><p>Площа: до 120 м2</p></li>
+                  <li><p>Меню: розширене меню</p></li>
+                  <li>
                     <p>
                       Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
                       офіціанти-різнороби
                     </p>
                   </li>
-                  <li class="types-text-item"><p>Посадкові місця: є</p></li>
+                  <li><p>Посадкові місця: є</p></li>
                 </ul>
               </li>
-              <li class="types-item types-item-horseshoe">
-                <h3 class="types-name">Horseshoe</h3>
-                <ul class="types-text-list">
-                  <li class="types-text-item"><p>Площа: до 25 м2</p></li>
-                  <li class="types-text-item">
+              <li class="types-card types-card__horseshoe">
+                <h3 class="types-card__name">Horseshoe</h3>
+                <ul class="types-card__list">
+                  <li><p>Площа: до 25 м2</p></li>
+                  <li>
                     <p>Меню: найпопулярніші позиції меню</p>
                   </li>
-                  <li class="types-text-item">
+                  <li>
                     <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
                   </li>
-                  <li class="types-text-item">
+                  <li>
                     <p>Посадкові місця: відсутні</p>
                   </li>
                 </ul>
               </li>
-              <li class="types-item types-item-handlebar">
-                <h3 class="types-name">Handlebar</h3>
-                <ul class="types-text-list">
-                  <li class="types-text-item"><p>Площа: до 15 м2</p></li>
-                  <li class="types-text-item">
+              <li class="types-card types-card__handlebar">
+                <h3 class="types-card__name">Handlebar</h3>
+                <ul class="types-card__list">
+                  <li><p>Площа: до 15 м2</p></li>
+                  <li>
                     <p>Меню: найпопулярніші позиції меню</p>
                   </li>
-                  <li class="types-text-item">
+                  <li>
                     <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
                   </li>
-                  <li class="types-text-item">
+                  <li>
                     <p>Посадкові місця: відсутні</p>
                   </li>
                 </ul>
               </li>
             </ul>
             <button class="btn-arrow" type="button">
-              <svg class="" width="17" height="14">
+              <svg width="17" height="14">
                 <use href="./images/sptrite-icon.svg#icon-arrow-right"></use>
               </svg>
             </button>
@@ -194,17 +194,16 @@
       </section>
 
       <!-- Form section -->
-      <section class="section" id="contacts">
-        <div class="container form-container">
-          <div class="form-wrap">
-            <h2 class="section-title form-title">
-              Приєднуйся до мережі пекарень
-            </h2>
-            <p class="form-text">Заповни форму, щоб ми звʼязались з тобою!</p>
+      <section class="section form-section" id="contacts">
+        <div class="container container--flex">
+          <div class="form-section__wrap">
+            <h2 class="section__title form-section__title">
+              Приєднуйся до мережі пекарень</h2>
+            <p class="form-section__text">Заповни форму, щоб ми звʼязались з тобою!</p>
             <form name="contact-form" autocomplete="on">
               <label class="visually-hidden" for="user-name">Ім’я</label>
               <input
-                class="form-input"
+                class="input form-section__input"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -214,7 +213,7 @@
 
               <label class="visually-hidden" for="user-tel">Телефон</label>
               <input
-                class="form-input"
+                class="input form-section__input"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
@@ -227,7 +226,7 @@
                 >Електронна пошта</label
               >
               <input
-                class="form-input"
+                class="input form-section__input"
                 type="email"
                 name="user-email"
                 id="user-email"
@@ -235,14 +234,14 @@
                 required
               />
 
-              <button class="button-call btn-form" type="submit">
+              <button class="button-call form-section__btn" type="submit">
                 Замовити дзвінок
               </button>
 
-              <p class="form-text-policy">
+              <p class="form-section__policy">
                 Натискаючи на кнопку я погоджуюсь з
                 <a
-                  class="form-policy-link"
+                  class="policy-link"
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -252,7 +251,7 @@
             </form>
           </div>
           <iframe
-            class="map"
+            class="form-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sie!4v1700491890540!5m2!1sru!2sie"
             width="600"
             height="600"
@@ -264,42 +263,43 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
-    <footer class="section-footer">
-      <div class="container cont-footer">
-        <nav class="nav-footer">
-          <div class="logo-wrap">
+    <footer class="footer">
+      <div class="container flex-gap">
+        <nav class="flex-gap half-basis">
+          <div class="half-basis">
             <a class="logo" href="/">
               <svg width="114" height="56">
                 <use href="./images/sptrite-icon.svg#icon-logo"></use>
               </svg>
             </a>
           </div>
-          <ul class="nav-list-footer">
-            <li class="nav-item-footer">
-              <a href="#advantages">Наші традиції</a>
+          <ul class="half-basis">
+            <li class="footer__nav-item">
+              <a class="link" href="#advantages">Наші традиції</a>
             </li>
-            <li class="nav-item-footer"><a href="#chefs">Шеф-кухарі</a></li>
-            <li class="nav-item-footer"><a href="#types">Формати</a></li>
-            <li class="nav-item-footer"><a href="#contacts">Контакти</a></li>
+            <li class="footer__nav-item"><a class="link" href="#chefs">Шеф-кухарі</a></li>
+            <li class="footer__nav-item"><a class="link" href="#types">Формати</a></li>
+            <li class="footer__nav-item"><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <div class="address-wrap">
-          <address class="address">
-            <ul class="address-list">
-              <li class="address-item">
-                <a class="address-item-link" href="tel:+380960000007"
+        <div class="flex-gap half-basis">
+          <address class="half-basis">
+            <ul>
+              <li class="footer__address-item">
+                <a class="address-link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
-              <li class="address-item">
-                <a class="address-item-link" href="mailto:shopbakery@gmail.com"
+              <li class="footer__address-item">
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
                   >shopbakery@gmail.com</a
                 >
               </li>
-              <li class="address-item">
+              <li class="footer__address-item">
                 <a
-                  class="address-item-link"
+                  class="address-link"
                   href="http://maps.app.goo.gl/d58zEVkt9He5GfzW6"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -307,26 +307,26 @@
                   вул. Січових Стрільців 54</a
                 >
               </li>
-              <li class="address-item">
-                <div class="address-socials">
+              <li class="footer__address-item">
+                <div class="flex-gap">
                   <a
-                    class="address-socials-link"
+                    class="footer__social-link"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <svg class="icon-socials">
+                    <svg class="footer__social-icon">
                       <use href="./images/sptrite-icon.svg#icon-facebook"></use>
                     </svg>
                   </a>
 
                   <a
-                    class="address-socials-link"
+                    class="footer__socials-link"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <svg class="icon-socials">
+                    <svg class="footer__social-icon">
                       <use
                         href="./images/sptrite-icon.svg#icon-instagram"
                       ></use>
@@ -336,15 +336,15 @@
               </li>
             </ul>
           </address>
-          <div class="text-footer">
+          <div class="half-basis">
             <a
-              class="privacy-policy"
+              class="address-link footer__privacy-policy "
               href="http://"
               target="_blank"
               rel="noopener noreferrer"
               >Політика конфіденційності</a
             >
-            <p class="data-protected">&copy; 2022 Дані захищені</p>
+            <p class="footer__data-protected">&copy; 2022 Дані захищені</p>
           </div>
         </div>
       </div>

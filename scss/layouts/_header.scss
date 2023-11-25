@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+    &__nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+        flex-grow: 2;
+      }
+
+      &__btn--animation {
+        transition: color 0.3s, background-color 1.3s, translate 0.5s;
+    
+        &:hover {
+            color: var(--primary-green);
+            background-color: var(--primary-light);
+            translate: 0 6px;
+        }
+    }
+  }
+  

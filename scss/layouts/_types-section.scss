@@ -1,0 +1,19 @@
+.types-section {
+
+&__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+&__wrap {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+ &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  } 
+}

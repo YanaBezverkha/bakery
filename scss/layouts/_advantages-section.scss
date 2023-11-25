@@ -1,0 +1,21 @@
+.advantages-section {
+    padding-top: 96px;
+
+    &__wrap {
+        max-width: 550px;
+      }
+
+    &__title,
+    &__definition {
+       margin-bottom: 42px;
+      }
+
+    &__text {
+        max-width: 320px;
+      }
+
+    &__img {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+  }

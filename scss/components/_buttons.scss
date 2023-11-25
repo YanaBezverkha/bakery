@@ -1,0 +1,26 @@
+.button-call {
+    font-weight: 600;
+    color: var(--primary-light);
+    background-color: var(--primary-green);
+    border-radius: 8px;
+    padding: 16px 32px;
+  }
+
+
+  .btn-arrow {
+    flex-shrink: 0;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    &:hover {
+      background-color: var(--primary-green);
+      border-color: var(--primary-green);
+    }   
+  }
+  

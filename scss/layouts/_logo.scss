@@ -1,0 +1,10 @@
+.logo {
+    fill: var(--primary-light);
+    transition: fill 0.3s, scale 0.3s;
+
+    &:hover {
+        fill: var(--primary-green);
+        scale: 1.05 1.05;
+  }
+  
+}
