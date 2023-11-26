@@ -169,6 +169,19 @@ body {
   border-color: var(--primary-green);
 }
 
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+}
+.btn-close:hover {
+  background-color: var(--primary-green);
+}
+
 .chef-card {
   max-width: 570px;
   display: flex;
@@ -407,10 +420,15 @@ body {
 }
 .form-section__input {
   margin-bottom: 24px;
+  font-size: 16px;
 }
 .form-section__btn {
   display: block;
   margin: 0 auto;
+  transition: scale 0.3s;
+}
+.form-section__btn:hover {
+  scale: 1.1;
 }
 .form-section__policy {
   display: block;
@@ -418,6 +436,7 @@ body {
   margin: 16px auto 0;
   font-size: 12px;
   text-align: center;
+  transition: color 0.3s;
 }
 .form-section__map {
   border-radius: 16px;
@@ -477,4 +496,82 @@ body {
 .footer__data-protected {
   color: var(--accent-beige);
   font-size: 14px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(49, 38, 26, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 80px;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 720px;
+  border-radius: 32px;
+  background-color: var(--primary-light);
+}
+.modal__btn-close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  transition: background-color 0.3s;
+}
+.modal__title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.modal__text {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.modal__input-wrap {
+  position: relative;
+}
+.modal__input-wrap:focus-within .modal__label {
+  top: -30px;
+  color: var(--primary-green);
+}
+.modal__label {
+  position: absolute;
+  top: 13px;
+  left: 42px;
+  color: var(--accent-beige);
+  transition: color 0.3s, top 0.3s;
+}
+.modal__input {
+  margin-bottom: 40px;
+}
+.modal__btn {
+  display: block;
+  margin: 0 auto 24px;
+  transition: scale 0.3s;
+}
+.modal__btn:hover {
+  scale: 1.1;
+}
+.modal__policy {
+  display: block;
+  max-width: 240px;
+  margin: auto;
+  font-size: 12px;
+  text-align: center;
+  transition: color 0.3s;
 }/*# sourceMappingURL=main.css.map */

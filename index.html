@@ -24,7 +24,7 @@
             <li><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button-call header__btn--animation" type="button">Замовити дзвінок</button>
+        <button class="button-call header__btn--animation js-modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </header>
 
@@ -349,5 +349,75 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="btn-close modal__btn-close js-modal-btn-close" type="button">
+          <svg class="" width="16" height="16">
+            <use href="./images/sptrite-icon.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+<h2 class="section__title modal__title">Замовити дзвінок</h2>
+<p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+<form name="contact-form" autocomplete="on">
+<div class="modal__input-wrap">
+  <label class="modal__label" for="user-name">Ім’я</label>
+  <input
+    class="input modal__input"
+    type="text"
+    name="user-name"
+    id="user-name"
+    required
+  />
+</div>
+
+<div class="modal__input-wrap">
+  <label class="modal__label" for="user-tel">Телефон</label>
+  <input
+    class="input modal__input"
+    type="tel"
+    name="user-tel"
+    id="user-tel"
+    required
+    pattern="^\+[0-9]{12}"
+  />
+</div>
+
+<div class="modal__input-wrap">
+  <label class="modal__label" for="user-email"
+  >Електронна пошта</label
+>
+<input
+  class="input modal__input"
+  type="email"
+  name="user-email"
+  id="user-email"
+  required
+/>
+</div>
+
+  <button class="button-call modal__btn" type="submit">
+    Замовити дзвінок
+  </button>
+
+  <p class="form-section__policy">
+    Натискаючи на кнопку я погоджуюсь з
+    <a
+      class="policy-link"
+      href="http://"
+      target="_blank"
+      rel="noopener noreferrer"
+      >політикою конфіденційності</a
+    >
+  </p>
+</form>
+
+      </div>
+    </div>
   </body>
+
+<script src="./js/modal.js" type="module"></script> 
+<script src="./js/slider.js" type="module"></script> 
+<script src="./js/burger-menu.js" type="module"></script> 
 </html>
